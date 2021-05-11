@@ -27,8 +27,8 @@ class MainApp(App):
         btn = Button(text='1.Start', font_size = 25, bold = True,size_hint=(None,None), width=270,height=50,pos_hint={'center_x':0.5},
                     on_release=self.start
                     )
-        btn2 = Button(text='2.Camera', font_size = 25, bold = True,size_hint=(None,None), width=270,height=50,pos_hint={'center_x':0.5},
-                    on_release=self.capture
+        btn2 = Button(text='2.Gallery', font_size = 25, bold = True,size_hint=(None,None), width=270,height=50,pos_hint={'center_x':0.5},
+                    on_release=self.Gallery
                     )
           
         layout.add_widget(img)
@@ -98,7 +98,8 @@ class MainApp(App):
 
 
         #When user pick the second option 2.Gallery
-    def capture(self,obj):
+        #in progress of developing Gallery feature
+    def Gallery(self,obj):
         print("Camera")
         '''
         Builder.load_string(
